@@ -19,8 +19,8 @@ const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementById("closeModal");
 
 function showSuggestions(query) {
-  if (!query) return;
   suggestionsBox.innerHTML = "";
+  if (!query) return;
 
   const matches = studentNames.filter((name) =>
     name.toLowerCase().startsWith(query.toLowerCase())
